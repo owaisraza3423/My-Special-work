@@ -1,0 +1,312 @@
+<header class="first">
+    <nav>
+      <ul class="first-navbar">
+        <li><a href="#">Product Ingraving</a></li>
+        <li><a href="#">Gift Store</a></li>
+        <li><a href="#">Express Delivery</a></li>
+        <li><a href="#">Corporate Orders</a></li>
+        <li><a href="#">Track Orders</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="cover">
+    <header class="second-header">
+      <img src="image/Bluck_s_Logo_copy_2.avif" alt="" class="logo">
+      <nav>
+        <ul class="second">
+          <li><a href="#">Softwere Based Wirless Mics</a></li>
+          <li><a href="#">Speakers & Buds</a></li>
+          <li><a href="#">Digital Powerbanks</a></li>
+          <li><a href="#">Tripods</a></li>
+          <li><a href="#">Acsessroies</a></li>
+        </ul>
+      </nav>
+      <div class="imp">
+        <ul class="links">
+          <li><i class='bx bx-user'></i></li>
+          <li><i class='bx bx-search'></i></li>
+          <li><i class='bx bx-cart'></i></li>
+        </ul>
+      </div>
+    </header>
+  </header>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Activation -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      direction: "horizontal",
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .first,
+  .cover {
+    position: absolute; /* Ya fixed bhi kar sakte ho */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Very important */
+  }
+  
+  .first {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    background: rgba(255, 255, 255, 0.8); /* optional: transparent look */
+  }
+  
+  .first-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 20px;
+    margin: 5px;
+    list-style: none;
+  }
+  
+  .first-navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 30px;
+  }
+  
+  .cover {
+    padding: 10px;
+  }
+  
+  .second-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85); /* optional transparent white */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .second {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .second a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Boxicons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    /* Swiper container */
+    .swiper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .swiper-slide {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    /* Header on top of slider */
+    .first{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      border: 1px solid black;
+    }
+    .cover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+   padding: 5px;
+      width: 100%;
+      z-index: 10;
+    }
+    
+    /* Top Navbar */
+    .first-navbar {
+      display: flex;
+      justify-content: right;
+      gap: 20px;
+      list-style: none;
+      z-index: inherit;
+      margin: 0;
+    }
+
+    .first-navbar li a {
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Second Header */
+    .second-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+     border: 1px solid black;
+    
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .second {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .second li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .imp .links {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .imp .links li i {
+      font-size: 20px;
+      cursor: pointer;
+      color: black;
+    }
+  </style>
+
+  <title>Slider with Header on Top</title>
+</head>
+<body>
+
+  <!-- Swiper Slider -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Header on Top of Slider -->
+  <header class="first">
+    <nav>
+      <ul class="first-navbar">
+        <li><a href="#">Product Ingraving</a></li>
+        <li><a href="#">Gift Store</a></li>
+        <li><a href="#">Express Delivery</a></li>
+        <li><a href="#">Corporate Orders</a></li>
+        <li><a href="#">Track Orders</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  </header>
+   <br>
+  <header class="cover">
+    <div class="second-header">
+      <img src="image/Bluck_s_Logo_copy_2.avif" alt="" class="logo">
+      <nav>
+        <ul class="second">
+          <li><a href="#">Softwere Based Wirless Mics</a></li>
+          <li><a href="#">Speakers & Buds</a></li>
+          <li><a href="#">Digital Powerbanks</a></li>
+          <li><a href="#">Tripods</a></li>
+          <li><a href="#">Acsessroies</a></li>
+        </ul>
+      </nav>
+      <div class="imp">
+        <ul class="links">
+          <li><i class='bx bx-user'></i></li>
+          <li><i class='bx bx-search'></i></li>
+          <li><i class='bx bx-cart'></i></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  </header> -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      mousewheel: true,
+    });
+  </script>
+</body>
+</html>
